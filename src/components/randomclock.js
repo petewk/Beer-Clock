@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+
 
 
 export default class RandomClock extends Component {
@@ -14,7 +14,6 @@ export default class RandomClock extends Component {
 randomTime(){
   let hour = ('0000'+parseInt(Math.random() * 24)).slice(-2);
   let minutes = ('00000'+parseInt(Math.random() * 60)).slice(-2);
-  console.log("Hours", hour, "minutes", minutes);
   this.setState({
     beerTime: `${hour} : ${minutes}`,
   })
@@ -30,7 +29,6 @@ beermeNow(){
   var d = new Date();
   var hour = ('0000'+d.getHours()).slice(-2);
   var minutes = ('0000'+(d.getMinutes()+1)).slice(-2) ;
-  console.log(hour + ':' + (minutes + 1));
   this.setState({
     beerTime: `${hour} : ${minutes}`
   })
@@ -54,7 +52,7 @@ beermeNow(){
         <br/>
         <button id="thirstyButton" className="hidden" onClick={() => this.beermeNow()}>But.... I'm thirsty!</button><br/>
         <h1 id="thirstyTime" className="hidden clockSection">Understandable. In that case: <br/>
-            <h2 id="partyTime" className="hidden">{this.state.beerTime}</h2>
+            <div id="partyTime" className="hidden">{this.state.beerTime}</div>
         </h1>
       </>
     )
