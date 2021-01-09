@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   padding-top: 0;
   color: #111d5e;
+  max-height: 900px;
 }
 
 .hidden {
@@ -36,7 +37,7 @@ button {
 }
 
 #beerButton {
-  min-width: 10%;
+  min-width: 20%;
   font-size: 2rem;
   padding: 5px;
   font-weight: bold;
