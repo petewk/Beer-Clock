@@ -48,11 +48,11 @@ beermeNow(){
         <h2 id="clockLabel" className="clockSection">Click here to determine a reasonable time for a beer</h2>
         <button id="beerButton" onClick={() => this.randomTime()}>Go</button>
         <br/>
-        <section id="originalBeerTime">{this.state.beerTime === "?" ? <h2>?</h2> : <h2 className="clockSection">You can have your next beer at: <br/> {this.state.beerTime}</h2>}</section>
+        <section id="originalBeerTime">{this.state.beerTime === "?" ? <h2></h2> : <h2 className="clockSection">You can have your next beer at: <br/> <div className="clock"><p className="clockFace">{this.state.beerTime}</p></div></h2>}</section>
         <br/>
         <button id="thirstyButton" className="hidden" onClick={() => this.beermeNow()}>But.... I'm thirsty!</button><br/>
         <h1 id="thirstyTime" className="hidden clockSection">Understandable. In that case: <br/>
-            <div id="partyTime" className="hidden">{this.state.beerTime}</div>
+            <div id="partyTime" className="hidden clock"><p className="clockFace">{this.state.beerTime}</p></div>
         </h1>
       </>
     )
