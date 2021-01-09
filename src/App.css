@@ -1,7 +1,66 @@
 @media (max-width: 999px) {
 body {
-  background-color: black;
+  background-image: url("./Media/beersBG.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  color: #111d5e;
 }
+
+.hidden {
+  opacity: 0;
+  display: hidden;
+}
+
+#appBody {
+  background-color: white;
+  width: 100%;
+  color: #111d5e;
+}
+
+#header {
+  background-color: #abd9f382;
+  font-size: 1.5rem;
+}
+
+.clockSection {
+  background-color: #abd9f382;
+  margin: 30px 20px;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+#beerButton {
+  min-width: 10%;
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #3895388a;
+}
+
+#thirstyTime {
+  transition: 0.3s;
+  text-shadow: 1px 1px 1px #ff5722;
+  color: #ff5722;
+  margin: 10px 20px;
+}
+
+#thirstyButton {
+  transition-delay: 5s;
+  transition: 2s cubic-bezier(1, 0.02, 0.65, 0.22);
+  background-color: #770d0d;
+  color: white;
+  min-width: 30%;
+  height: 10%;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
 }
 
 
