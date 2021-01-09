@@ -10,7 +10,6 @@ body {
 
 .hidden {
   opacity: 0;
-  display: hidden;
 }
 
 #appBody {
@@ -176,6 +175,5 @@ button {
 
 .hidden {
   opacity: 0;
-  display: hidden;
 }
 }
